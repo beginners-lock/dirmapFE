@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { FolderTree } from "lucide-react"
 import Button from "./Button"
+import { AUTH_PAGE } from "../../utils/routes"
 
 export default function Navbar(){
     return(
@@ -19,11 +20,11 @@ export default function Navbar(){
           </div>
   
           <div className="flex items-center gap-3">
-            <Link to="/auth">
+            <Link to={AUTH_PAGE}>
             <Button variant="outline" className="hidden lg:flex">Log in</Button>
             </Link>
 
-            <Link to="/auth">
+            <Link to={AUTH_PAGE}>
             <Button>Sign up free</Button>
             </Link>
           </div>
