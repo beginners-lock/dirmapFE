@@ -1,5 +1,5 @@
 import { Check } from "lucide-react"
-import Button from "../../components/global/Button"
+import Button from "../../../components/global/Button"
 
 interface Props {
     name: string,

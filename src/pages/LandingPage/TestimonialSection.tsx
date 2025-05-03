@@ -1,4 +1,4 @@
-import TestimonialCard from "./TesitimonialCard";
+import TestimonialCard from "./cards/TesitimonialCard";
 
 export const TestimonialSection = () => {
     const testimonials = [

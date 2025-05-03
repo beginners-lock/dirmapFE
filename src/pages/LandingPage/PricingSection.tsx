@@ -1,5 +1,5 @@
 import React from 'react';
-import PricingCard from './PricingCard';
+import PricingCard from './cards/PricingCard';
 
 const PricingSection: React.FC = () => {
   const tiers = [
