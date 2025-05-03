@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom"
 import Button from "../../components/global/Button"
 import { ArrowRight } from "lucide-react"
+import { AUTH_PAGE } from "../../utils/routes"
 
 export default function CtaSection(){
     return(
@@ -14,11 +16,12 @@ export default function CtaSection(){
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button variant="secondary" className="inline-flex"
-            >
-              <span>Start Building Your First Structure</span>
-              <ArrowRight className="h-5 w-5" />
-            </Button>
+            <Link to={AUTH_PAGE}>
+              <Button variant="secondary" className="inline-flex">
+                <span>Start Building Your First Structure</span>
+                <ArrowRight className="h-5 w-5" />
+              </Button>
+            </Link>
           </div>
           
           <p className="mt-8 text-sm text-white/60">
