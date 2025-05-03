@@ -4,8 +4,8 @@ import Button from "./Button"
 
 export default function Navbar(){
     return(
-        <nav className="fixed w-full bg-white/80 backdrop-blur-md z-50 py-4 border-b border-gray-200">
-        <div className="container mx-auto flex items-center justify-between">
+        <nav className="sticky top-0 w-full bg-white/80 backdrop-blur-md z-50 py-4 border-b border-gray-200">
+        <div className="container mx-auto flex items-center justify-between px-4 md:px-0">
           <div className="flex items-center gap-2">
             <FolderTree className="h-6 w-6 text-brand-blue" />
             <span className="font-bold text-xl text-black">dirmap.</span>
@@ -20,7 +20,7 @@ export default function Navbar(){
   
           <div className="flex items-center gap-3">
             <Link to="/auth">
-            <Button variant="outline" className="hidden md:flex">Log in</Button>
+            <Button variant="outline" className="hidden lg:flex">Log in</Button>
             </Link>
 
             <Link to="/auth">
@@ -31,21 +31,3 @@ export default function Navbar(){
       </nav> 
     )
 }
-
-/**
- * <header className="sticky top-0 w-full bg-background/95 shadow-sm backdrop-blur z-50">
-            <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div className="flex items-center space-x-2">
-                <FolderTree className="h-6 w-6 text-custom-purple" />
-                <span className="text-xl font-bold text-custom-darkblue">dirmap.</span>
-            </div>
-            <div>
-                <Link to="/auth">
-                    <Button className="bg-violet-600 hover:bg-custom-darkpurple">
-                        Sign In
-                    </Button>
-                </Link>
-            </div>
-            </div>
-        </header>
- */

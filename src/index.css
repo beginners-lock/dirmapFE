@@ -1,24 +1,41 @@
 @import "tailwindcss";
 
 @theme{
-  --color-custom-green: #25FEFB;
-  --color-custom-blue: #52CEFF;
-  --color-custom-purple: #A797FA;
-  --color-custom-teal: #B0FBE1;
-
-  --color-custom-darkblue:#1b4555;
-  --color-custom-darkpurple:#544c7d;
-  --color-custom-darkgreen: #137f7e;
-  --color-custom-darkteal: #587e71;
-
   --color-brand-blue:#4361EE;
   --color-brand-purple:#7209B7;
   --color-brand-lightblue:#DBEAFE;
   --color-brand-lightpurple:#F3E8FF;
   --color-brand-grey:#D1D5DB;
   --color-brand-violet:#5350DE;
-  --color-brand-green:#D1D5DB;
+  --color-brand-green:#1DAE53;
   --color-brand-red:#EF4444;
+}
+
+@theme {
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+}
+
+@theme{
+  --animate-float: float 2s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
 }
 
 :root {
